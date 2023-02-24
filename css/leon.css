@@ -1,3 +1,7 @@
+:root {
+    --Main_Color: #10cab7;
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -103,3 +107,36 @@ body {
 .header .links ul li:not(:last-child) a {
     border-bottom: 1px solid #ddd;
 }
+
+/* End Header */
+/* Start landing */
+.landing {
+    background-image: url(../images/landing.jpg);
+    background-size: cover;
+    height: calc(100vh - 64px);
+    position: relative;
+}
+
+.landing .introText {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    max-width: 100%;
+}
+
+.landing .introText h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--Main_Color);
+}
+
+.landing .introText p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* End Landing */
