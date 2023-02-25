@@ -41,6 +41,33 @@ body {
     }
 }
 
+/* Components */
+.Special_Heading {
+    color: #ebeced;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0;
+}
+
+.Special_Heading+p {
+    margin: -30px 0 0;
+    font-size: 17px;
+    text-align: center;
+    color: #575757;
+}
+
+@media (max-width: 767px) {
+    .special-heading {
+        font-size: 60px;
+    }
+
+    .special-heading+p {
+        margin-top: -20px;
+    }
+}
+
 /* Start Header */
 .header {
     padding: 20px;
@@ -178,6 +205,5 @@ body {
     color: #777;
     font-size: 17px;
 }
-
 
 /* End features */
