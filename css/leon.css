@@ -1,5 +1,6 @@
 :root {
     --Main_Color: #10cab7;
+    --Secondary_Color: #2c4755;
 }
 
 * {
@@ -213,10 +214,79 @@ body {
 /* End features */
 /* ----------------------------------------------------------------------------- */
 /* Start Services */
+.Services .services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin-top: 100px;
+}
+
+.Services .services-content .srv {
+    display: flex;
+    margin-bottom: 40px;
+    transition: 0.3s;
+    /* box-shadow: 2px 5px 12px 6px #ebebeb; */
+}
+
+.Services .services-content .srv:hover {
+    box-shadow: 3px 10px 12px 0px #ebebeb;
+}
+
+@media (max-width: 767px) {
+    .Services .services-content .srv {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.Services .services-content .srv i {
+    color: var(--Main_Color);
+    font-size: 35px;
+    flex-basis: 60px;
+}
 
 
 
+.Services .services-content .srv .text {
+    flex: 1;
+}
 
+.Services .services-content .srv .text h3 {
+    margin: 0 0 20px;
+    color: #2c4755;
+}
+
+.Services .services-content .srv .text p {
+    color: #777;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.Services .services-content .image {
+    text-align: center;
+    position: relative;
+}
+
+.Services .services-content .image::before {
+    content: "";
+    background-color: var(--Secondary_Color);
+    width: 85px;
+    height: calc(100% + 100px);
+    top: -50px;
+    position: absolute;
+    right: 10px;
+    z-index: -1;
+}
+
+.Services .services-content .image img {
+    width: 260px;
+}
+
+@media (max-width: 1199px) {
+    .image-column {
+        display: none;
+    }
+}
 
 /* End Services */
 /* ----------------------------------------------------------------------------- */
