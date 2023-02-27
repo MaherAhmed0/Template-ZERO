@@ -1,6 +1,9 @@
 :root {
     --Main_Color: #10cab7;
     --Secondary_Color: #2c4755;
+    --Section_Padding: 60px;
+    --Section_Background: #f6f6f6;
+    --Main_Duration: 0.3s;
 }
 
 * {
@@ -334,10 +337,62 @@ body {
 }
 
 /* End Portfolio */
+/* ----------------------------------------------------------------------------- */
+/* Start About */
 
 
 
+/* End About */
+/* ----------------------------------------------------------------------------- */
+/* Start Contact */
+.contact {
+    padding: var(--Section_Padding) 0;
+    background-color: var(--Section_Background);
+}
 
+.contact .info {
+    padding-top: var(--Section_Padding) 0;
+    text-align: center;
+}
+
+.contact .info .label {
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--Secondary_Color);
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+}
+
+.contact .info .link {
+    display: block;
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--Main_Color);
+    text-decoration: none;
+}
+
+.contact .info .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.contact .info .social i {
+    margin-left: 10px;
+    color: var(--Secondary_Color);
+}
+
+@media (max-width: 767px) {
+
+    .contact .info .label,
+    .contact .info .link {
+        font-size: 25px;
+    }
+}
+
+/* End Contact */
+/* ----------------------------------------------------------------------------- */
 /* Start Footer */
 .footer {
     background-color: var(--Secondary_Color);
@@ -353,3 +408,4 @@ body {
 }
 
 /* End Footer */
+/* ----------------------------------------------------------------------------- */
