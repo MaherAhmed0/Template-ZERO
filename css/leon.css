@@ -16,6 +16,10 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     padding-left: 15px;
     padding-right: 15px;
