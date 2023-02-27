@@ -72,21 +72,21 @@ body {
 
 /* ----------------------------------------------------------------------------- */
 /* Start Header */
-.header {
+.Header {
     padding: 20px;
 }
 
-.header .container {
+.Header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header .container .logo {
+.Header .container .logo {
     width: 60px;
 }
 
-.header .links {
+.Header .links {
     position: relative;
 }
 
@@ -95,7 +95,7 @@ body {
     color: #333;
 }
 
-.header .links ul {
+.Header .links ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -108,7 +108,7 @@ body {
     z-index: 1;
 }
 
-.header .links ul::before {
+.Header .links ul::before {
     content: "";
     border-width: 10px;
     border-style: solid;
@@ -118,11 +118,11 @@ body {
     top: -20px;
 }
 
-.header .links:hover ul {
+.Header .links:hover ul {
     display: block;
 }
 
-.header .links ul li a {
+.Header .links ul li a {
     display: block;
     padding: 15px;
     text-decoration: none;
@@ -130,11 +130,11 @@ body {
     transition: 0.3s;
 }
 
-.header .links ul li a:hover {
+.Header .links ul li a:hover {
     padding-left: 25px;
 }
 
-.header .links ul li:not(:last-child) a {
+.Header .links ul li:not(:last-child) a {
     border-bottom: 1px solid #ddd;
 }
 
