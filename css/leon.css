@@ -18,7 +18,7 @@ body {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    color: brown;
+    color: rgb(0, 0, 0);
 }
 
 /* Small */
@@ -61,11 +61,11 @@ body {
 }
 
 @media (max-width: 767px) {
-    .special-heading {
+    .Special_Heading {
         font-size: 60px;
     }
 
-    .special-heading+p {
+    .Special_Heading+p {
         margin-top: -20px;
     }
 }
@@ -214,6 +214,10 @@ body {
 /* End features */
 /* ----------------------------------------------------------------------------- */
 /* Start Services */
+.Services {
+    padding: 60px 0;
+}
+
 .Services .services-content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -244,8 +248,6 @@ body {
     font-size: 35px;
     flex-basis: 60px;
 }
-
-
 
 .Services .services-content .srv .text {
     flex: 1;
@@ -290,3 +292,46 @@ body {
 
 /* End Services */
 /* ----------------------------------------------------------------------------- */
+/* Start Portfolio */
+.Portfolio {
+    padding: 60px 0;
+    background-color: #f6f6f6;
+}
+
+.Portfolio .Portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin-top: 100px;
+}
+
+.Portfolio .Portfolio-content .card {
+    background-color: white;
+    transition: 0.3s;
+}
+
+.Portfolio .Portfolio-content .card:hover {
+    box-shadow: 3px 10px 12px 0px #ebebeb;
+}
+
+.Portfolio .Portfolio-content .card img {
+    max-width: 100%;
+}
+
+.Portfolio .Portfolio-content .card .info {
+    padding: 20px;
+}
+
+.Portfolio .Portfolio-content .card .info h3 {
+    margin: 0;
+    color: #2c4755;
+}
+
+.Portfolio .Portfolio-content .card .info p {
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* jllk */
+/* End Portfolio */
